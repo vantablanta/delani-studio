@@ -1,2 +1,2 @@
-# delani-studio
+# Delani Studio
 Delani Studio Website
