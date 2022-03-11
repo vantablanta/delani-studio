@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 
-html, body{
-    font-family: 'Varela Round', sans-serif;
+body{
+    font-family: 'Varela Round', sans-serif !important;
+    box-sizing: border-box;
+}
+section{
+    height: 100vh;
+    min-height: 100vh;
+}
+.hero-img{
+    background: url("../assets/backgrounds/h_img.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
 }
 
-   
+.hero-text{
+    color: white;
+}
