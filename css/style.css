@@ -15,12 +15,19 @@ body{
 }
 .hero-text{
     color: white;
+    padding-top: 40vh;
 }
-.services{
+.about-us{
+    padding: 15vh;
+}
+.services-img{
     background: url("../assets/backgrounds/s_image.jpg");
     background-position: top;
     background-repeat: no-repeat;
-    height: 75vh;
-    min-height: 75vh;
-    color: white;
 }
+.services{ 
+    color: white;
+    padding: 20vh;
+}
+
+
