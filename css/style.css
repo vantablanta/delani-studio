@@ -24,10 +24,34 @@ body{
     background: url("../assets/backgrounds/s_image.jpg");
     background-position: top;
     background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 100vh;
 }
-.services{ 
+.services-text{ 
     color: white;
-    padding: 20vh;
+    padding-top: 20vh;
 }
+.design{
+    margin-left: 30vh;
+    margin-right: 30vh;
+    margin-bottom: 10vh;
+}
+.dev{
+    margin-left: 30vh;
+    margin-right: 30vh;
+    margin-bottom: 10vh;
+}
+.product{
+    margin-left: 30vh;
+    margin-right: 30vh;
+    margin-bottom: 10vh;
+}
+
+@media (min-width: 576px) {
+    
+}
+
+
+
 
 
