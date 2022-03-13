@@ -118,6 +118,32 @@ textarea:focus, input:focus{
 .bold{
     font-weight: bold;
 }
+.form-hidden{
+display: none;
+}
+.warning{
+    visibility: hidden;
+}
+.warning-popup{
+    display: block;
+    padding: 10%;
+    margin: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.link-style{
+    color: rgb(4, 4, 97);
+    text-decoration: none
+}
+.success-popup{
+    padding: 10%;
+    margin: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
 
 
 
