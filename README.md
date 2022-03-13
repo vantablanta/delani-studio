@@ -33,4 +33,4 @@ Studio company landing page. Showcases their work and services they offer.
 
 
 ## Support
-[Email](vantablanta@gmail.com)
+[Email](mailto:vantablanta@gmail.com)
