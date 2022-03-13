@@ -32,7 +32,7 @@ body{
     }
 }
 .about-us{
-    min-height: 25vh;
+    max-height: 75vh;
     width: 100vw;
     padding: 2%;
 }
@@ -50,11 +50,12 @@ body{
     color: white;
 }
 .what-we-do{
-    height: 75vh;
+    max-height: 75vh;
     width: 100vw;
 }
 figcaption{
     font-weight: bold;
+    margin: 0;
 }
 .design, .dev, .product{
     margin: 10%;
@@ -78,22 +79,18 @@ figcaption{
     display: block;
     cursor: pointer;
 }
-
-
-
-h5{
-    padding: 0;
-    margin: 0;
-}
 .portfolio{
     min-height: 100vh;
-    width: 80vw;
+    width: 100vw;
+}
+.col-md-3 img{
+    max-width: 100%;
 }
 .contact-bg{
     background: url("../assets/backgrounds/c_image.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    height: 100vh;
     width: 100vw;
     color: white;
     text-align: center;
@@ -101,12 +98,10 @@ h5{
 textarea, input{
     background: transparent !important;
     color: white;  
-
 }
 textarea:focus, input:focus{
     color: white
 }
-
 .form-control::placeholder{
     color: white;
 }
