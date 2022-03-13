@@ -1,5 +1,7 @@
 $(document).ready(function(){
-    $("#scroll").on('load', function(){{} })
+    $("#scroll").on('click', function(){
+        $(this)
+    })
 
 
 
