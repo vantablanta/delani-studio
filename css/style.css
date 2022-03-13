@@ -3,55 +3,79 @@
 
 body{
     font-family: 'Varela Round', sans-serif !important;
-    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
     
 }
 .hero-img{
     background: url("../assets/backgrounds/h_img.jpg");
-    background-position:  center;
+    background-position:  center center;
     background-repeat: no-repeat;
-    height: 100vh;
     min-height: 100vh;
+    width: 100vw;
 }
 .hero-text{
     color: white;
-    padding-top: 40vh;
 }
 .about-us{
-    padding: 15vh;
+    height: 50vh;
+    width: 75vw;
 }
+.services{
+    height: 100vh;
+}
+
 .services-img{
     background: url("../assets/backgrounds/s_image.jpg");
     background-position: top;
     background-repeat: no-repeat;
-    height: 100vh;
-    min-height: 100vh;
+    height: 50vh;
+    width: 100vw;
 }
 .services-text{ 
+    padding-top: 5%;
     color: white;
-    padding-top: 20vh;
 }
-.design{
-    margin-left: 30vh;
-    margin-right: 30vh;
-    margin-bottom: 10vh;
+.contact-bg{
+    background: url("../assets/backgrounds/c_image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100vw;
+    color: white;
 }
-.dev{
-    margin-left: 30vh;
-    margin-right: 30vh;
-    margin-bottom: 10vh;
-}
-.product{
-    margin-left: 30vh;
-    margin-right: 30vh;
-    margin-bottom: 10vh;
-}
-
-@media (min-width: 576px) {
+textarea, input{
+    background: transparent !important;
+    color: white;
+    width: 10%;
     
 }
+textarea:focus, input:focus{
+    color: white
+}
+.form-control::placeholder{
+    color: white;
+}
 
 
 
 
+
+
+
+
+@media (max-width: 575.98px) {
+    .services-icons{
+        display: flex;
+        flex-direction: column;
+    }
+    .design, .dev, .product{
+        width: 100px;
+        height: 100px;
+    }
+
+}
+ 
 

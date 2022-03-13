@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <section class="container-fluid h-100 w-100 hero-img">
+    <section class="container-fluid hero-img">
         <div class="hero-text text-center d-flex flex-column align-items-center justify-content-center h-100">
             <img class="p-2" src="./assets/logo/logo.png" alt="Logo">
             <h3 class="p-4">WELCOME</h3>
@@ -26,8 +26,8 @@
         </div>
     </section>
 
-    <section class="container-fluid h-50 w-100 about-us text-center">
-        <div class="text-center">
+    <section class="container-fluid about-us">
+        <div class="text-center p-5 text-wrap">
             <h2>ABOUT US</h2>
             <p>When you work with us, you are part of a team of commited collaborators. All aspects of our
                 software development process are intergrated , interactive and agile.</p>
@@ -40,38 +40,81 @@
         </div>
     </section>
 
-    <section class="container-fluid h-25 w-100 text-center services-img">
-        <div class="text-center services-text">
-            <h2>SERVICES</h2>
-            <p>Before we sign a contract or write a line of code, our team will spend the neccessary time needed to
-                understand your product vision.</p>
-            <p>The outcome of the scoping session a proposal or high-level statement of work.</p>
-            <p>Based on your requirements, we can provide a complete offering or just the piece you need.</p>
-        </div>
-    </section>
-
-    <section class="container-fluid h-50 w-100 ">
-        <div class="what-we-do">
-            <h2 class="text-center p-5">WHAT WE DO</h2>
-            <div class="d-flex justify-content-center service-icons">
-                <img class="design" src="./assets/services-icons/design_icon.png" alt="Design Icon">
-                <img class="dev" src="./assets/services-icons/dev_icon.png" alt="Development Icon">
-                <img class="product" src="./assets/services-icons/product_icon.png" alt="Product Icon">
+    <section class="container-fluid services-img">
+        <div class="text-center">
+            <div class="services-text" >
+                <h2>SERVICES</h2>
+                <p>Before we sign a contract or write a line of code, our team will spend the neccessary time needed to
+                    understand your product vision.</p>
+                <p>The outcome of the scoping session a proposal or high-level statement of work.</p>
+                <p>Based on your requirements, we can provide a complete offering or just the piece you need.</p>
             </div>
         </div>
     </section>
-    <section class=" container-fluid h-100 w-100 portfolio">
-        <h3 class="text-align-center">PORTFOLIO</h3>
+
+    <section class="container-fluid what-we-do">
+        <h2 class="text-center">WHAT WE DO</h2>
+            <div class="services-icons">
+                <img class="design " src="./assets/services-icons/design_icon.png" alt="Design Icon">
+                <img class="dev " src="./assets/services-icons/dev_icon.png" alt="Development Icon">
+                <img class="product" src="./assets/services-icons/product_icon.png" alt="Product Icon">
+            </div>
+    </section>
+
+    <section class="container-fluid portfolio">
+        <h2 class="text-center">PORTFOLIO</h2>
         <div class="portfolio-images">
-            <img src="./assets/portfolio/work1.jpg">
-            <img src="./assets/portfolio/work2.jpg">
-            <img src="./assets/portfolio/work3.jpg">
-            <img src="./assets/portfolio/work4.jpg">
-            <img src="./assets/portfolio/work5.jpg">
-            <img src="./assets/portfolio/work6.jpg">
-            <img src="./assets/portfolio/work7.jpg">
-            <img src="./assets/portfolio/work8.jpg">
+            <div class="row row-cols-4 m-5">
+                <div class="col"><img class= "p-2 m-4" src="./assets/portfolio/work4.jpg"></div>
+                <div class="col"><img class= "p-2 m-4" src="./assets/portfolio/work3.jpg"></div>
+                <div class="col"><img class= "p-2 m-4" src="./assets/portfolio/work2.jpg"></div>
+                <div class="col"><img class= "p-2 m-4" src="./assets/portfolio/work1.jpg"></div>
+            </div>
+            <div class="row row-cols-4 m-5">
+                <div class="col"><img class= "p-2 m-4" src="./assets/portfolio/work5.jpg"></div>
+                <div class="col"><img class= "p-2 m-4" src="./assets/portfolio/work6.jpg"></div>
+                <div class="col"><img class= "p-2 m-4" src="./assets/portfolio/work7.jpg"></div>
+                <div class="col"><img class= "p-2 m-4" src="./assets/portfolio/work8.jpg"></div>
+            </div>
         </div>
+    </section>
+
+    <section class="container-fluid contact-bg h-100 w-100">
+        <h1 class="text-center p-5">CONTACT US</h1>
+        <form action="" class="m-5">
+            <div class="form-group">
+                <label for="name" class="m-5">
+                    <input class="form-control" type="text" name="Name" id="name" placeholder="Name">
+                </label>
+                <label for="email" class="m-5">
+                    <input class="form-control" type="email" name="Email" id="Email" placeholder="Email">
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="message">
+                    <textarea class="form-control " name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                </label>
+                <button type="button" class="btn btn-secondary form-group">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="container-fluid">
+        <footer>
+            <div class="footer-icons d-flex justify-content-center m-3">
+                <img class="p-2" src="./assets/social-icons/twitter.png">
+                <img class="p-2" src="./assets/social-icons/dribble.png">
+                <img class="p-2" src="./assets/social-icons/facebook.png">
+                <img class="p-2" src="./assets/social-icons/g_plus.png">
+                <img class="p-2" src="./assets/social-icons/skype.png">
+                <img class="p-2" src="./assets/social-icons/stumble_upon.png">
+                <img class="p-2" src="./assets/social-icons/behance.png">
+                <img class="p-2" src="./assets/social-icons/pinterest.png">
+                <img class="p-2" src="./assets/social-icons/flickr.png">
+            </div>
+            <p class="text-center">Delani Studio</p>
+            <p class="text-center">2019</p>
+        </footer>
     </section>
 
 </body>
