@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
     <script src="js/script-ui.js" defer></script>
+    <script src="js/script.js" defer></script>
     <title>Delani Studio</title>
 </head>
 
@@ -85,7 +85,7 @@
         </figure>
     </section>
 
-    <section class="continer-fluid portfolio text-center ">
+    <section class="continer portfolio text-center ">
         <h2 class="">PORTFOLIO</h2>
         <div class="row">
             <div class="col-md-3 d-block p-4">
@@ -127,8 +127,8 @@
 
     <section class="container-fluid contact-bg">
         <h1 class="text-center p-3">CONTACT US</h1>
-        <form action="" class="m-5">
-            <div class="form-group m-3">
+        <form action="" class="p-3">
+            <div class="form-group form-inline m-3">
                 <label for="name" class="p-3">
                     <input class="form-control" type="text" name="Name" id="name" placeholder="Name">
                 </label>
@@ -138,17 +138,17 @@
             </div>
             <div class="form-group m-3">
                 <label for="message">
-                    <textarea class="form-control" name="" id="message" cols="100" rows="10"
-                        placeholder="Enter Message"></textarea>
+                    <textarea class="form-control" name="Message" id="message" rows="8" placeholder="Enter Message"></textarea>
                 </label>
             </div>
-            <button type="button" class="btn btn-secondary form-group m-3" id="btn">Submit</button>
+            <!--Enter key is submit-->
+            <button type="submit" class="btn btn-primary col-md-1" id="btn">Submit</button>
         </form>
     </section>
 
     <section class="container-fluid">
         <footer>
-            <div class="footer-icons d-flex justify-content-center m-3">
+            <div class="text-center footer-icons m-3">
                 <img class="p-2" src="./assets/social-icons/twitter.png">
                 <img class="p-2" src="./assets/social-icons/dribble.png">
                 <img class="p-2" src="./assets/social-icons/facebook.png">

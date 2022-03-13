@@ -101,4 +101,7 @@ $(document).ready(function(){
     $("#8").mouseout(function(){
         $(".hover-text-8-show").hide()
     })
+
+
+
 })
