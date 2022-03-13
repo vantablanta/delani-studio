@@ -6,7 +6,7 @@ body{
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     
 }
 .hero-img{
@@ -50,17 +50,44 @@ body{
     color: white;
 }
 .what-we-do{
-    height: 25vh;
+    height: 75vh;
     width: 100vw;
-    margin: 5%;
+}
+figcaption{
+    font-weight: bold;
 }
 .design, .dev, .product{
     margin: 10%;
-    padding: 2%;
+    padding: 0;
+}
+.design-description{
+    display: none;
+    text-align: center;
+}
 
+.dev-description{
+    display: none;
+    text-align: center;
+}
+.product-description{
+    display: none;
+    text-align: center;
+}
+
+.description-show{
+    display: block;
+    cursor: pointer;
+}
+
+
+
+h5{
+    padding: 0;
+    margin: 0;
 }
 .portfolio{
-    padding-right: 5%;
+    min-height: 100vh;
+    width: 80vw;
 }
 .contact-bg{
     background: url("../assets/backgrounds/c_image.jpg");
