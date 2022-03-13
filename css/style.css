@@ -37,7 +37,6 @@ body{
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 .services-text{ 
     padding: 10%;
@@ -59,21 +58,38 @@ figcaption{
     display: none;
     text-align: center;
 }
-
 .description-show{
     display: block;
     cursor: pointer;
 }
 .portfolio{
- margin: 5%
+    margin: 5%;
+    height: 100vh;
 }
 .col-md-3 img{
     max-width: 100%;
 }
 .hover-effect{
-background-color: rgb(226, 226, 226);
-opacity: .2;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.2;
 }
+.hover-text-1-show,
+.hover-text-2-show,
+.hover-text-3-show,
+.hover-text-4-show,
+.hover-text-5-show,
+.hover-text-6-show,
+.hover-text-7-show,
+.hover-text-8-show{
+    display: none;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    top: -130px;
+    left: 2px;
+    text-align: center;
+}
+
 
 .contact-bg{
     background: url("../assets/backgrounds/c_image.jpg");
