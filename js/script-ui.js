@@ -3,6 +3,7 @@ $(document).ready(function(){
         $(this).slideUp()
         $(".design-description").addClass("description-show").slideDown()
     })
+
     $(".design-description").on('click', function(){
         $(this).slideUp()
         $(".design").slideDown() 
@@ -12,19 +13,30 @@ $(document).ready(function(){
         $(this).slideUp()
         $(".dev-description").addClass("description-show").slideDown()
     })
+
     $(".dev-description").on('click', function(){
         $(this).slideUp()
         $(".dev").slideDown() 
     })
 
-        $(".product").on('click', function(){
+    $(".product").on('click', function(){
         $(this).slideUp()
         $(".product-description").addClass("description-show").slideDown()
     })
+
     $(".product-description").on('click', function(){
         $(this).slideUp()
         $(".product").slideDown() 
     })
 
+    $(".portfolio-image").each(function(element){
+        $(this).mouseover(function(){
+            $(this).addClass("hover-effect")
+        })
+        $(this).mouseout(function(){
+            $(this).removeClass("hover-effect")
+        })
+
+    })
 
 })
