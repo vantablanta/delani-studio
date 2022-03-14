@@ -114,12 +114,14 @@ textarea:focus, input:focus{
 }
 #btn{
     width: 20vw;
+    color: white;
+    background-color: blue;
 }
 .bold{
     font-weight: bold;
 }
 .form-hidden{
-display: none;
+    display: none;
 }
 .warning{
     visibility: hidden;
@@ -133,8 +135,13 @@ display: none;
     text-align: center;
 }
 .link-style{
-    color: rgb(4, 4, 97);
-    text-decoration: none
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 18px;
+}
+.link-style:hover{
+    color: blue   
 }
 .success-popup{
     padding: 10%;

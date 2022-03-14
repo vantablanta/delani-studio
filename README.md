@@ -1,4 +1,4 @@
-## Delani Studio
+## Project Name
 Delani Studio Website
 
 ## Author
@@ -17,6 +17,7 @@ Studio company landing page. Showcases their work and services they offer.
 * Pull it to your local environment
 * Load the index.html file in your favourite browser
 * You can load it locally since you have all the files needed
+* The form action send the user data to our formspree account.
 
 ## Technologies Used
 * HTML -structure
