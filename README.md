@@ -2,7 +2,7 @@
 Delani Studio Website
 
 ## FormSpree Post API
-![image](assets/email collections.png)
+![image](./assets/email%20collections.png)
 
 ## Author
 Michelle Njeri
