@@ -1,11 +1,11 @@
 ## Project Name
 Delani Studio Website
 
-## FormSpree Post API
-![image](./assets/email%20collections.png)
-
 ## Author
 Michelle Njeri
+
+## FormSpree Post API
+![image](./assets/email%20collections.png)
 
 ## Description
 Studio company landing page. Showcases their work and services they offer. 
