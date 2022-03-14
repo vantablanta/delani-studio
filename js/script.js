@@ -3,89 +3,24 @@ let btn = document.getElementById("btn")
 let userName = document.getElementById("name")
 let userEmail = document.getElementById("email")
 let userMessage = document.getElementById("message")
-let form = document.querySelector("form")
 let warning = document.querySelector(".warning")
 let success = document.querySelector(".success")
 let link;
 
+
+
 //submit event listenr 
-btn.addEventListener('click', function(e) {
-    e.preventDefault();
-    // verify inputs arent blanks 
-    let person = userName.value
-    let email = userEmail.value
-    let message = userMessage.value
-
-    
-
-    //verify email 
-    function validateEmail(email) {
-        let verfiedEmail =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-        let emailVerifiedResult = verfiedEmail.test(email)
-        //verify it is not blank 
-        if(person == "" || email == "" || message == "") {
-            form.classList.add('form-hidden')
-            warning.classList.remove('warning')
-            warning.classList.add('warning-popup')
-            warning.textContent = "You did not provide either your name, email or message content"
-            link = document.createTextNode("Please Try Again")
-            let a = document.createElement('a');
-            a.appendChild(link);
-            a.href = "#contact-us";
-            a.classList.add("link-style")
-            warning.appendChild(a);
-            a.addEventListener('click', function (e) {
-                e.preventDefault()
-                form.classList.remove("form-hidden")
-                warning.classList.add("warning")
-                warning.classList.remove("warning-popup")
-                warning.removeChild(a)
-            })
-        }
-        //verify is correct
-        else if (!emailVerifiedResult){
-            form.classList.add('form-hidden')
-            warning.classList.remove('warning')
-            warning.classList.add('warning-popup')
-            warning.textContent = "You provided an invalid email"
-            link = document.createTextNode("Please Try Again")
-            let a = document.createElement('a');
-            a.appendChild(link);
-            a.href = "#contact-us";
-            a.classList.add("link-style")
-            warning.appendChild(a);
-            a.addEventListener('click', function (e) {
-                e.preventDefault()
-                form.classList.remove("form-hidden")
-                warning.classList.add("warning")
-                warning.classList.remove("warning-popup")
-                warning.removeChild(a)
-            })
-        //correct input  
-        }else{
-            form.classList.add('form-hidden')
-            success.classList.add("success-popup")
-            success.textContent = `Thank you  ${person}  for reaching out to us. 
-                                We will get back to you through this email: ${email} `
-            link = document.createTextNode("Back Home")
-            let a = document.createElement('a');
-            a.appendChild(link);
-            a.href = "./index.html";
-            a.classList.add("link-style")
-            success.appendChild(a);
-        }
-        form.reset()   
-    }
-    validateEmail(email)
-    // correct inputs 
-    
-})
-
+let person = userName.value
+let message = userMessage.value
+let email = userEmail.value
+let formInput = document.getElementById("form")
+let verfiedEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+let emailVerifiedResult = verfiedEmail.test(email)
 
 // Form spree Post API input collection
-var formInput = document.getElementById("form");
 async function handleSubmit(event) {
     event.preventDefault();
+    var form = document.getElementById("form");
     var status = document.getElementById("my-form-status");
     var data = new FormData(event.target);
     fetch(event.target.action, {
@@ -96,6 +31,7 @@ async function handleSubmit(event) {
         }
     }).then(response => {
         if (response.ok) {
+            status.classList.add("success-popup")
             status.innerHTML = "Thanks for your submission!";
             form.reset()
         } else {
@@ -103,15 +39,21 @@ async function handleSubmit(event) {
                 if (Object.hasOwn(data, 'errors')) {
                     status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
                 } else {
+                    status.classList.add("warning-popup")
                     status.innerHTML = "Oops! There was a problem submitting your form"
                 }
             })
         }
     }).catch(error => {
+        status.classList.add("warning-popup")
         status.innerHTML = "Oops! There was a problem submitting your form"
     });
+    formInput.reset()
+
 }
 form.addEventListener("submit", handleSubmit)
+
+
 
 
 

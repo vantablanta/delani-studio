@@ -88,7 +88,7 @@ figcaption{
     font-weight: bold;
     position: absolute;
     text-align: center;
-    padding: 40px;
+    padding: 60px;
 }
 .contact-bg{
     background: url("../assets/backgrounds/c_image.jpg");
@@ -127,29 +127,30 @@ textarea:focus, input:focus{
 .warning{
     visibility: hidden;
 }
-.warning-popup{
-    display: block;
-    padding: 10%;
-    margin: 20px;
-    color: white;
-    font-weight: bold;
+#my-form-status{
     text-align: center;
 }
-.link-style{
-    color: black;
-    text-decoration: none;
-    font-weight: normal;
-    font-size: 18px;
-}
-.link-style:hover{
-    color: blue   
+.warning-popup{
+    color: rgb(255, 255, 255);
+    background-color: red;
+    font-weight: bold;
+    text-align: center;
+    padding: 2%;
+    width: 50%;
+    margin: 5%;
+    margin-left: 25%;
+    
 }
 .success-popup{
-    padding: 10%;
-    margin: 20px;
-    color: white;
+    color: rgb(255, 255, 255);
+    background-color: green;
     font-weight: bold;
     text-align: center;
+    padding: 2%;
+    width: 50%;
+    margin: 5%;
+    margin-left: 25%;
+
 }
 
 
