@@ -68,6 +68,8 @@ figcaption{
 }
 .col-md-3 img{
     max-width: 100%;
+    position: relative;
+    
 }
 .hover-effect{
     background-color: rgb(255, 255, 255);
@@ -84,10 +86,9 @@ figcaption{
     display: none;
     color: black;
     font-weight: bold;
-    position: relative;
-    top: -130px;
-    left: 2px;
+    position: absolute;
     text-align: center;
+    padding: 40px;
 }
 .contact-bg{
     background: url("../assets/backgrounds/c_image.jpg");

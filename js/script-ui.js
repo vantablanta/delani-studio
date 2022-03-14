@@ -29,7 +29,7 @@ $(document).ready(function(){
         $(".product").slideDown() 
     })
 
-    $(".portfolio-image").each(function(element){
+    $(".portfolio-image").each(function(){
         $(this).mouseover(function(){
             $(this).addClass("hover-effect")            
         })
@@ -44,6 +44,7 @@ $(document).ready(function(){
 
     $("#1").mouseout(function(){
         $(".hover-text-1-show").hide()
+        
     })
 
     $("#2").mouseover(function(){
