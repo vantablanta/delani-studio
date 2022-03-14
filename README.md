@@ -30,7 +30,7 @@ Studio company landing page. Showcases their work and services they offer.
 [MIT Licence](https://github.com/vantablanta/delani-studio/blob/master/LICENSE)
 
 ## Live Site
-[Delani Studio Website]()
+[Delani Studio Website](https://vantablanta.github.io/delani-studio/)
 
 
 ## Support
