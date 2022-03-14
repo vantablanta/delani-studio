@@ -8,47 +8,77 @@ let warning = document.querySelector(".warning")
 let success = document.querySelector(".success")
 let link;
 
-
-
 //submit event listenr 
-btn.addEventListener('click', function() {
-    
+btn.addEventListener('click', function(e) {
+    e.preventDefault();
     // verify inputs arent blanks 
     let person = userName.value
     let email = userEmail.value
     let message = userMessage.value
-    if (person == "" || email == "" || message == "") {
-        form.classList.add('form-hidden')
-        warning.classList.remove('warning')
-        warning.classList.add('warning-popup')
-        link = document.createTextNode("Please Try Again")
-        let a = document.createElement('a');
-        a.appendChild(link);
-        a.href = "#contact-us";
-        a.classList.add("link-style")
-        warning.appendChild(a);
-        a.addEventListener('click', function (e) {
-            e.preventDefault()
-            form.classList.remove("form-hidden")
-            warning.classList.add("warning")
-            warning.classList.remove("warning-popup")
-            warning.removeChild(a)
-        })
+
+    
+
+    //verify email 
+    function validateEmail(email) {
+        let verfiedEmail =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+        let emailVerifiedResult = verfiedEmail.test(email)
+        //verify it is not blank 
+        if(person == "" || email == "" || message == "") {
+            form.classList.add('form-hidden')
+            warning.classList.remove('warning')
+            warning.classList.add('warning-popup')
+            warning.textContent = "You did not provide either your name, email or message content"
+            link = document.createTextNode("Please Try Again")
+            let a = document.createElement('a');
+            a.appendChild(link);
+            a.href = "#contact-us";
+            a.classList.add("link-style")
+            warning.appendChild(a);
+            a.addEventListener('click', function (e) {
+                e.preventDefault()
+                form.classList.remove("form-hidden")
+                warning.classList.add("warning")
+                warning.classList.remove("warning-popup")
+                warning.removeChild(a)
+            })
+        }
+        //verify is correct
+        else if (!emailVerifiedResult){
+            form.classList.add('form-hidden')
+            warning.classList.remove('warning')
+            warning.classList.add('warning-popup')
+            warning.textContent = "You provided an invalid email"
+            link = document.createTextNode("Please Try Again")
+            let a = document.createElement('a');
+            a.appendChild(link);
+            a.href = "#contact-us";
+            a.classList.add("link-style")
+            warning.appendChild(a);
+            a.addEventListener('click', function (e) {
+                e.preventDefault()
+                form.classList.remove("form-hidden")
+                warning.classList.add("warning")
+                warning.classList.remove("warning-popup")
+                warning.removeChild(a)
+            })
+        //correct input  
+        }else{
+            form.classList.add('form-hidden')
+            success.classList.add("success-popup")
+            success.textContent = `Thank you  ${person}  for reaching out to us. 
+                                We will get back to you through this email: ${email} `
+            link = document.createTextNode("Back Home")
+            let a = document.createElement('a');
+            a.appendChild(link);
+            a.href = "./index.html";
+            a.classList.add("link-style")
+            success.appendChild(a);
+        }
+        form.reset()   
     }
+    validateEmail(email)
     // correct inputs 
-    else {
-        form.classList.add('form-hidden')
-        success.classList.add("success-popup")
-        success.textContent = `Thank you  ${person}  for reaching out to us. 
-                            We will get back to you through this email: ${email} `
-        link = document.createTextNode("Back Home")
-        let a = document.createElement('a');
-        a.appendChild(link);
-        a.href = "./index.html";
-        a.classList.add("link-style")
-        success.appendChild(a);
-    }
-    form.reset()
+    
 })
 
 
