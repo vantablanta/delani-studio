@@ -1,6 +1,9 @@
 ## Project Name
 Delani Studio Website
 
+## FormSpree Post API
+![image](assets/email collections.png)
+
 ## Author
 Michelle Njeri
 
